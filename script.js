@@ -42,8 +42,27 @@ async function weatherInfo () {
     var date5 = data.list[32].dt_txt.split(" ")[0];
     var icon5 = data.list[32].weather[0].icon;
 
+    document.getElementById("temp1").textContent=temp1;
+    document.getElementById("humidity1").textContent=humid1;
+    document.getElementById("wind1").textContent=wind1;
 
-    console.log(data)
+    document.getElementById("temp2").textContent=temp2;
+    document.getElementById("humidity2").textContent=humid2;
+    document.getElementById("wind2").textContent=wind2;
+
+    document.getElementById("temp3").textContent=temp3;
+    document.getElementById("humidity3").textContent=humid3;
+    document.getElementById("wind3").textContent=wind3;
+
+    document.getElementById("temp4").textContent=temp4;
+    document.getElementById("humidity4").textContent=humid4;
+    document.getElementById("wind4").textContent=wind4;
+
+    document.getElementById("temp5").textContent=temp5;
+    document.getElementById("humidity5").textContent=humid5;
+    document.getElementById("wind5").textContent=wind5;
+
+
 }
 
 weatherInfo ();
